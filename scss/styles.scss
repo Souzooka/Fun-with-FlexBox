@@ -64,6 +64,16 @@
 
 // 3. Centering
 
+.centering-formula-1 {
 
+  display:flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+
+  .centered {
+    flex-grow: 1;
+  }
+}
 
 // 4. Ordering
