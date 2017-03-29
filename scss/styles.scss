@@ -76,4 +76,16 @@
   }
 }
 
+.centering-formula-2 {
+
+  display:flex;
+  flex-flow: row nowrap;
+
+  .centered {
+    flex-grow: 1;
+    margin: auto;
+  }
+
+}
+
 // 4. Ordering
