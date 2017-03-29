@@ -89,3 +89,69 @@
 }
 
 // 4. Ordering
+
+.ordering-block {
+
+  display:flex;
+  flex-flow: row nowrap;
+
+  .item {
+    width: 100%;
+  }
+
+  .item-c {
+    order: -2;
+  }
+
+  .item-b {
+    order: -1;
+  }
+
+  @include respond-to('medium'){
+
+    .item {
+      width: initial;
+    }
+
+    .item-a {
+      width: 20%;
+    }
+
+    .item-b {
+      width: 5%;
+      order: 0;
+    }
+
+    .item-c {
+      width: 40%;
+      order: 0;
+    }
+
+    .item-d {
+      width: 25%;
+    }
+
+  }
+
+  @include respond-to('large'){
+
+    justify-content: space-between;
+
+    .item-a {
+      order: 1;
+    }
+
+    .item-b {
+    }
+
+    .item-c {
+      width: 10%;
+      order: -1;
+    }
+
+    .item-d {
+      order: -3;
+    }
+
+  }
+}
